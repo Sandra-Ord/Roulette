@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="RouletteGrid.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Styles>
+        <FluentTheme />
+        <StyleInclude Source="/GridElementControl.axaml" />
+    </Application.Styles>
+             
+    <Application.Resources>
+        <SolidColorBrush x:Key="ZeroGreenBrush">#308c4d</SolidColorBrush>
+        <SolidColorBrush x:Key="TableGreenBrush">#3d5746</SolidColorBrush>
+        <SolidColorBrush x:Key="TableShadowGreenBrush">#36453b</SolidColorBrush>
+        <SolidColorBrush x:Key="RedCardBrush">DarkRed</SolidColorBrush>
+        <SolidColorBrush x:Key="BlackCardBrush">Black</SolidColorBrush>
+    </Application.Resources>
+</Application>

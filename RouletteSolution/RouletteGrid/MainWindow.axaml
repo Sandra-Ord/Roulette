@@ -1,0 +1,202 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:RouletteGrid"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400"
+        Width="1400" MinWidth="800" Height="700" MinHeight="400"
+        x:Class="RouletteGrid.MainWindow"
+        Title="RouletteGrid">
+    
+    <Window.Styles>
+        <Style Selector="Label.Title">
+            <!-- <Setter Property="" Value=""/> -->
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+    </Window.Styles>
+    
+    <Grid RowDefinitions="Auto, *, Auto" Background="{DynamicResource TableGreenBrush}">
+        
+        <!-- Title Bar -->
+        <Grid Margin="20, 20, 20, 0" Grid.Row="0" Background="Black">
+            <Label Foreground="White" Margin="10" Classes="Title">R O U L E T T E</Label>
+        </Grid>
+        
+        <!-- Roulette grid -->
+        
+        <Grid Grid.Row="1" ColumnDefinitions="0.5*, 1.25*, *, *, *, *, *, *, *, *, *, *, *, *, 1.4*, 0.5*" RowDefinitions="0.25*, *, *, *, *, *, 0.25*">
+            
+            <!-- 0 -->
+            <controls:GridElementControl Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Background="{DynamicResource ZeroGreenBrush}" FontSize="40" BettingValue="0"></controls:GridElementControl> 
+            
+            <!-- Numbers -->
+            <Grid  Margin="5" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="12" Grid.RowSpan="3" RowDefinitions="*, *, *"  ColumnDefinitions="*, *, *, *, *, *, *, *, *, *, *, *">
+                
+                <controls:GridElementControl Grid.Row="2" Grid.Column="0" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="1"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="0" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="2"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="0" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="3"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="1" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="4"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="1" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="5"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="1" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="6"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="2" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="7"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="2" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="8"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="2" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="9"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="3" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="10"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="3" 
+                                             Background="{DynamicResource BlackCardBrush}"
+                                             BettingValue="11"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="3" 
+                                             Background="{DynamicResource RedCardBrush}"
+                                             BettingValue="12"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="4" 
+                                             Background="{DynamicResource BlackCardBrush}"
+                                             BettingValue="13"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="4" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="14"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="4" 
+                                             Background="{DynamicResource BlackCardBrush}"
+                                             BettingValue="15"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="5" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="16"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="5" 
+                                             Background="{DynamicResource BlackCardBrush}"
+                                             BettingValue="17"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="5" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="18"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="6" 
+                                             Background="{DynamicResource RedCardBrush}"
+                                             BettingValue="19"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="6" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="20"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="6" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="21"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="7" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="22"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="7" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="23"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="7" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="24"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="8" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="25"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="8" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="26"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="8" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="27"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="9" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="28"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="9" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="29"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="9" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="30"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="10" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="31"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="10" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="32"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="10" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="33"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" Grid.Column="11" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="34"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="11" 
+                                             Background="{DynamicResource BlackCardBrush}" 
+                                             BettingValue="35"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="11" 
+                                             Background="{DynamicResource RedCardBrush}" 
+                                             BettingValue="36"></controls:GridElementControl> 
+                
+            </Grid>
+            
+            <!-- Columns -->
+            <Grid Grid.Row="1" Grid.Column="14" Grid.RowSpan="3" RowDefinitions="*, *, *">
+                
+                <controls:GridElementControl Grid.Row="0" BettingValue="2 to 1"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" BettingValue="2 to 1"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="2" BettingValue="2 to 1"></controls:GridElementControl> 
+                
+            </Grid>
+            
+            <!-- Dozen, Even/Odd, Red/Black, Low/High options -->
+            <Grid Grid.Row="4" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="12" RowDefinitions="*, *" ColumnDefinitions="*, *, *, *, *, *">
+                
+                <!-- Dozens-->
+                <controls:GridElementControl Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                                             BettingValue="1st 12"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" 
+                                             BettingValue="2nd 12"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2"  
+                                             BettingValue="3rd 12"></controls:GridElementControl> 
+                
+                <!-- Low or High-->
+                <controls:GridElementControl Grid.Row="1" Grid.Column="0" 
+                                             BettingValue="1 to 18"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="5" 
+                                             BettingValue="18 to 36"></controls:GridElementControl> 
+                
+                <!-- Even or Odd-->
+                <controls:GridElementControl Grid.Row="1" Grid.Column="1" 
+                                             BettingValue="EVEN"></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="4" 
+                                             BettingValue="ODD"></controls:GridElementControl> 
+                
+                <!-- Red or Black-->
+                <controls:GridElementControl Grid.Row="1" Grid.Column="2" Background="{DynamicResource RedCardBrush}"  BettingValue=" "></controls:GridElementControl> 
+                <controls:GridElementControl Grid.Row="1" Grid.Column="3" Background="{DynamicResource BlackCardBrush}" BettingValue=" "></controls:GridElementControl> 
+                
+            </Grid>
+            
+        </Grid>
+        
+        <!-- Bottom grid -->
+        <Grid Grid.Row="2"  Background="Gray" Height="40">
+            <Label 
+                Margin="10, 0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right" 
+                FontWeight="Heavy" 
+                FontSize="18">
+                PlayTech assignment by Sandra Örd
+            </Label>
+        </Grid>
+        
+    </Grid>
+</Window>

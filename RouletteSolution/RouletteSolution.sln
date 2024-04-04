@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteGrid", "RouletteGrid\RouletteGrid.csproj", "{A3792899-9CF5-4B31-8B06-4F2958E3221A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{EF644255-328B-4CFB-8918-0D4E9A8D78C6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3792899-9CF5-4B31-8B06-4F2958E3221A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3792899-9CF5-4B31-8B06-4F2958E3221A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3792899-9CF5-4B31-8B06-4F2958E3221A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3792899-9CF5-4B31-8B06-4F2958E3221A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
